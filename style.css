@@ -1449,24 +1449,37 @@ a.underline-link:hover {
   .nav__list {
     gap: var(--space-4);
   }
-  /* Scale the enlarged badge back down so the 8-link nav + CTA still fit */
+  /* Scale the enlarged badge back down so the nav + CTA still fit */
   .brand__mark--badge {
-    width: 118px;
-    height: 110px;
+    width: 104px;
+    height: 97px;
   }
   .brand__wordmark {
     font-size: var(--text-base);
   }
 }
 
-/* Below this width the nav no longer fits, so hand off to the hamburger.
-   Raised again from 1320px: the badge is larger and the nav gained a Policies item. */
-@media (max-width: 1660px) {
+/* Below this width the nav no longer fits alongside the two-line wordmark and CTA,
+   so hand off to the hamburger. Raised from 1660px because the wordmark's second line
+   ("Recovery Services") was visually overlapping nav links on typical wide monitors. */
+@media (max-width: 1760px) {
   .nav__list {
     display: none;
   }
   .nav-toggle {
     display: inline-flex;
+  }
+}
+
+/* Tighten the header row above the hamburger cutoff so the two-line wordmark
+   still has clear space between itself and the nav links. */
+@media (min-width: 1761px) {
+  .brand__wordmark {
+    padding-right: var(--space-3);
+    border-right: 0;
+  }
+  .header__inner {
+    gap: var(--space-6);
   }
 }
 
