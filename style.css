@@ -1056,7 +1056,8 @@ a.underline-link:hover {
   border-bottom: 2px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 20%, transparent);
 }
 .fee-table--enhanced tbody td {
-  padding: var(--space-3) var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.9rem;
   border-bottom: 1px solid var(--color-divider);
   transition: background 0.15s ease;
 }
@@ -1069,21 +1070,24 @@ a.underline-link:hover {
 .fee-table--enhanced .fee-table__group-header td {
   background: color-mix(in srgb, var(--color-brand, #2f5f4c) 6%, transparent);
   font-family: var(--font-display);
-  font-size: var(--text-sm);
+  font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-brand, #2f5f4c);
-  padding: var(--space-2) var(--space-3);
+  padding: 6px var(--space-3);
   border-bottom: 1px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 15%, transparent);
+}
+.fee-table__note {
+  font-size: 0.78rem;
 }
 .fee-table__price {
   display: inline-block;
   font-family: var(--font-display);
-  font-size: var(--text-lg);
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--color-brand, #2f5f4c);
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 999px;
   background: color-mix(in srgb, var(--color-brand, #2f5f4c) 8%, transparent);
   white-space: nowrap;
