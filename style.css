@@ -1822,3 +1822,49 @@ a.underline-link:hover {
   color: var(--color-accent, #7a3fbf);
   margin-top: 2px;
 }
+
+/* -------- Relocated logo: centered band below the header -------- */
+.site-logo {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) var(--space-4) var(--space-4);
+  background: transparent;
+}
+.site-logo__link {
+  display: inline-block;
+  line-height: 0;
+}
+.site-logo__link img {
+  display: block;
+  width: 200px;
+  height: auto;
+  max-width: 60vw;
+}
+@media (max-width: 700px) {
+  .site-logo { padding: var(--space-5) var(--space-3) var(--space-3); }
+  .site-logo__link img { width: 148px; }
+}
+
+/* Header brand becomes an invisible skip-link so the header row keeps no visible logo */
+.brand--home {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
