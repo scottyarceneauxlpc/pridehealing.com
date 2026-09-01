@@ -893,9 +893,15 @@ a.underline-link:hover {
 /* Compact grouped-chip layout (replaces long card grid) */
 .insurance-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-2);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   margin-top: var(--space-3);
+}
+@media (max-width: 900px) {
+  .insurance-groups { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .insurance-groups { grid-template-columns: 1fr; }
 }
 .insurance-group {
   padding: 10px 12px 12px;
