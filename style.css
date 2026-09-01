@@ -1898,25 +1898,83 @@ a.underline-link:hover {
 .membership-list {
   list-style: none;
   padding: 0;
-  margin: var(--space-4) 0 0;
+  margin: var(--space-5) 0 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-3) var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-4) var(--space-5);
 }
 .membership-list li {
   display: flex;
-  align-items: flex-start;
-  gap: var(--space-2);
+  align-items: center;
+  gap: var(--space-3);
   font-weight: 500;
   color: var(--color-text);
-  line-height: 1.4;
+  line-height: 1.35;
+  padding: var(--space-3);
+  border: 1px solid var(--color-divider);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--color-bg, #fff) 96%, transparent);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
-.membership-list .icon {
+.membership-list li:hover {
+  border-color: color-mix(in srgb, var(--color-brand, #2f5f4c) 30%, var(--color-divider));
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transform: translateY(-1px);
+}
+.membership-logo {
   flex: 0 0 auto;
-  width: 20px;
-  height: 20px;
-  color: var(--color-accent, #7a3fbf);
-  margin-top: 2px;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid var(--color-divider);
+  border-radius: 12px;
+  padding: 6px;
+  overflow: hidden;
+}
+.membership-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.membership-logo--mono {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-brand, #2f5f4c);
+  background: color-mix(in srgb, var(--color-brand, #2f5f4c) 10%, #fff);
+  border-color: color-mix(in srgb, var(--color-brand, #2f5f4c) 25%, transparent);
+  padding: 4px;
+  text-align: center;
+  line-height: 1;
+}
+.membership-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.membership-sub {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+}
+@media (max-width: 640px) {
+  .membership-list {
+    grid-template-columns: 1fr;
+  }
+  .membership-logo {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /* -------- Relocated logo: centered band below the header -------- */
