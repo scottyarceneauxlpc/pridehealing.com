@@ -1976,14 +1976,6 @@ a.underline-link:hover {
     height: 48px;
   }
 }
-.leadership-block {
-  margin-top: var(--space-8);
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-divider);
-}
-.leadership-block h3 {
-  margin: var(--space-1) 0 0;
-}
 .membership-role-line {
   display: inline-flex;
   flex-wrap: wrap;
