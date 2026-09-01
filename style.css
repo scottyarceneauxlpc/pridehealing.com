@@ -184,17 +184,15 @@ section.section--tight {
 section.section--hero {
   padding-block: clamp(var(--space-12), 7vw, var(--space-20));
 }
-/* Text-only section-heads: center them so they align visually with the centered
-   logo band and don't leave a large empty column on wide viewports. Applies to
-   any section where the section-head is the sole content of the container. */
-section > .container > .section-head:only-child,
-section > .container--narrow > .section-head:only-child {
+/* Section heading blocks (.section-head with optional rainbow rule + eyebrow +
+   heading + lede) are always centered so every section on every page reads as
+   a properly centered title block, matching the centered logo band. */
+.section-head {
   text-align: center;
   max-width: 780px;
   margin-inline: auto;
 }
-section > .container > .section-head:only-child .pride-rule,
-section > .container--narrow > .section-head:only-child .pride-rule {
+.section-head .pride-rule {
   margin-left: auto;
   margin-right: auto;
 }
