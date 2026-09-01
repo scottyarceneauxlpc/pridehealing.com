@@ -1540,12 +1540,23 @@ a.underline-link:hover {
   }
 }
 
-/* Wordmark spacing tweaks above the hamburger cutoff. Header gap is controlled
-   by the base .header__inner rule so the logo has room from the nav links. */
+/* Wordmark spacing tweaks above the hamburger cutoff, and enforce a real
+   visible gap between the logo and the first nav link on wide/ultrawide monitors. */
 @media (min-width: 1761px) {
   .brand__wordmark {
     padding-right: var(--space-3);
     border-right: 0;
+  }
+  .header__inner {
+    justify-content: flex-start !important;
+    gap: var(--space-16) !important;
+  }
+  .header__inner .brand {
+    margin-right: var(--space-24) !important;
+    flex-shrink: 0 !important;
+  }
+  .header__inner .nav__actions {
+    margin-left: auto;
   }
 }
 
