@@ -295,13 +295,12 @@ a.underline-link:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-6);
+  gap: var(--space-12);
   padding-block: var(--space-2);
   min-width: 0;
   flex-wrap: nowrap;
 }
-.header__inner .brand { margin-right: var(--space-3); }
-.header__inner .brand { min-width: 0; flex-shrink: 1; }
+.header__inner .brand { min-width: 0; flex-shrink: 0; margin-right: var(--space-10); }
 .header__inner .nav { flex-shrink: 1; min-width: 0; }
 .header__inner .nav__actions { flex-shrink: 0; }
 
