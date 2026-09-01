@@ -894,7 +894,8 @@ a.underline-link:hover {
 .insurance-groups {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  align-items: start;
+  gap: 12px;
   margin-top: var(--space-3);
 }
 @media (max-width: 900px) {
@@ -904,7 +905,7 @@ a.underline-link:hover {
   .insurance-groups { grid-template-columns: 1fr; }
 }
 .insurance-group {
-  padding: 10px 12px 12px;
+  padding: 10px 14px 14px;
   border-radius: 10px;
   background: #fff;
   border: 1px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 15%, transparent);
