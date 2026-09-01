@@ -1778,3 +1778,28 @@ a.underline-link:hover {
     padding-inline: var(--space-4);
   }
 }
+
+/* Professional Memberships list */
+.membership-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-3) var(--space-5);
+}
+.membership-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+.membership-list .icon {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent, #7a3fbf);
+  margin-top: 2px;
+}
