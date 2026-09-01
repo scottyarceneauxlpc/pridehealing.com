@@ -1825,23 +1825,25 @@ a.underline-link:hover {
 
 /* -------- Relocated logo: centered band below the header -------- */
 .site-logo {
-  display: flex;
-  justify-content: center;
-  padding: var(--space-6) var(--space-4) var(--space-4);
+  display: block;
+  text-align: center;
+  padding: var(--space-8) var(--space-4) var(--space-6);
   background: transparent;
 }
 .site-logo__link {
   display: inline-block;
   line-height: 0;
+  margin: 0 auto;
 }
 .site-logo__link img {
   display: block;
   width: 200px;
   height: auto;
   max-width: 60vw;
+  margin: 0 auto;
 }
 @media (max-width: 700px) {
-  .site-logo { padding: var(--space-5) var(--space-3) var(--space-3); }
+  .site-logo { padding: var(--space-6) var(--space-3) var(--space-4); }
   .site-logo__link img { width: 148px; }
 }
 
