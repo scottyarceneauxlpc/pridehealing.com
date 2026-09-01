@@ -776,39 +776,74 @@ a.underline-link:hover {
 }
 
 /* ---------- Accepted-insurance cards ---------- */
+.insurance-panel { overflow: hidden; }
+.insurance-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: var(--space-3) 0 var(--space-2) 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--color-brand, #2f5f4c) 4%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 12%, transparent);
+  align-items: center;
+}
+.insurance-legend::before {
+  content: "Coverage types:";
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-right: 4px;
+}
 .insurance-grid {
   list-style: none;
   padding: 0;
   margin: var(--space-3) 0 0 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: var(--space-3);
 }
 .insurance-card {
   position: relative;
   padding: var(--space-3);
   border-radius: 14px;
-  background: color-mix(in srgb, var(--color-brand, #2f5f4c) 5%, transparent);
-  border: 1px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 20%, transparent);
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 18%, transparent);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  gap: 8px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  overflow: hidden;
+}
+.insurance-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-brand, #2f5f4c) 0%, color-mix(in srgb, var(--color-brand, #2f5f4c) 55%, #a8c5b6) 100%);
+  opacity: 0.9;
 }
 .insurance-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-brand, #2f5f4c) 15%, transparent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--color-brand, #2f5f4c) 18%, transparent);
+  border-color: color-mix(in srgb, var(--color-brand, #2f5f4c) 35%, transparent);
 }
 .insurance-card__check {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: var(--color-brand, #2f5f4c);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4px;
+  margin: 6px 0 4px 0;
+  box-shadow: 0 2px 6px color-mix(in srgb, var(--color-brand, #2f5f4c) 30%, transparent);
 }
 .insurance-card__check svg {
   width: 18px;
@@ -820,12 +855,46 @@ a.underline-link:hover {
   font-weight: 600;
   color: var(--color-text);
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 .insurance-card__plans {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   margin: 0;
+  line-height: 1.45;
+}
+.insurance-card__chips {
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: auto 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.insurance-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.insurance-chip--commercial { background: #eaf2ff; color: #1e4a8a; border-color: #c8d8f2; }
+.insurance-chip--medicare   { background: #fff3e0; color: #8a4b00; border-color: #f4d9b0; }
+.insurance-chip--medicaid   { background: #e6f5ea; color: #235c39; border-color: #c2e2cc; }
+.insurance-chip--va         { background: #f0ebff; color: #4a2a8a; border-color: #d6c9f2; }
+.insurance-footnote {
+  margin-top: var(--space-4);
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--color-brand, #2f5f4c) 4%, transparent);
+  border-left: 3px solid color-mix(in srgb, var(--color-brand, #2f5f4c) 40%, transparent);
+  font-size: var(--text-sm);
 }
 
 .insurance-pending {

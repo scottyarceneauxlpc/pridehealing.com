@@ -98,79 +98,155 @@
 
   <section class="section--tight">
     <div class="container container--narrow">
-      <div class="card" data-reveal>
+      <div class="card insurance-panel" data-reveal>
         <p class="eyebrow">Accepted Insurance Plans</p>
         <h2>Currently in-network</h2>
-        <p class="muted">Pride Healing &amp; Recovery Services is credentialed and actively accepting the following plans. If you don't see your plan listed, reach out &mdash; additional credentialing is in progress and updates happen often.</p>
+        <p class="muted">Pride Healing &amp; Recovery Services is credentialed and actively accepting the plans below across Commercial, Medicare, Medicaid, and VA coverage &mdash; including four of the five Louisiana Medicaid managed care organizations. If you don't see your plan listed, reach out &mdash; additional credentialing is in progress and updates happen often.</p>
+
+        <div class="insurance-legend" role="list" aria-label="Coverage categories">
+          <span class="insurance-chip insurance-chip--commercial" role="listitem">Commercial</span>
+          <span class="insurance-chip insurance-chip--medicare" role="listitem">Medicare</span>
+          <span class="insurance-chip insurance-chip--medicaid" role="listitem">Medicaid</span>
+          <span class="insurance-chip insurance-chip--va" role="listitem">VA</span>
+        </div>
+
         <ul class="insurance-grid" role="list">
           <li class="insurance-card">
             <div class="insurance-card__check" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
-            <h3 class="insurance-card__name">Louisiana Medicaid</h3>
-            <p class="insurance-card__plans">Straight Medicaid</p>
-          </li>
-          <li class="insurance-card">
-            <div class="insurance-card__check" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </div>
-            <h3 class="insurance-card__name">Medicare</h3>
-            <p class="insurance-card__plans">Medicare Part B</p>
-          </li>
-          <li class="insurance-card">
-            <div class="insurance-card__check" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </div>
             <h3 class="insurance-card__name">Blue Cross Blue Shield</h3>
-            <p class="insurance-card__plans">of Louisiana</p>
-          </li>
-          <li class="insurance-card">
-            <div class="insurance-card__check" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </div>
-            <h3 class="insurance-card__name">Louisiana Healthy Blue</h3>
-            <p class="insurance-card__plans">Medicaid managed care</p>
+            <p class="insurance-card__plans">Commercial plans and marketplace coverage</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--commercial">Commercial</li>
+            </ul>
           </li>
           <li class="insurance-card">
             <div class="insurance-card__check" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
             <h3 class="insurance-card__name">Aetna</h3>
-            <p class="insurance-card__plans">Commercial &middot; Medicare &middot; Medicaid</p>
+            <p class="insurance-card__plans">Commercial and Medicare Advantage plans</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--commercial">Commercial</li>
+              <li class="insurance-chip insurance-chip--medicare">Medicare</li>
+            </ul>
           </li>
           <li class="insurance-card">
             <div class="insurance-card__check" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
             <h3 class="insurance-card__name">UnitedHealthcare</h3>
-            <p class="insurance-card__plans">Commercial &middot; Medicare</p>
+            <p class="insurance-card__plans">Commercial and Medicare Advantage plans</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--commercial">Commercial</li>
+              <li class="insurance-chip insurance-chip--medicare">Medicare</li>
+            </ul>
           </li>
           <li class="insurance-card">
             <div class="insurance-card__check" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
-            <h3 class="insurance-card__name">AmeriHealth Caritas</h3>
-            <p class="insurance-card__plans">Louisiana Medicaid managed care</p>
+            <h3 class="insurance-card__name">Humana</h3>
+            <p class="insurance-card__plans">Commercial and Medicare Advantage plans</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--commercial">Commercial</li>
+              <li class="insurance-chip insurance-chip--medicare">Medicare</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">Cigna</h3>
+            <p class="insurance-card__plans">Commercial plans and employer-sponsored coverage</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--commercial">Commercial</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">UMR</h3>
+            <p class="insurance-card__plans">Third-party administrator for self-funded employer plans (a UnitedHealthcare company)</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--commercial">Commercial</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">Medicare</h3>
+            <p class="insurance-card__plans">Original Medicare (Part B) traditional coverage</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--medicare">Medicare</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">Louisiana Medicaid</h3>
+            <p class="insurance-card__plans">Straight (fee-for-service) Medicaid</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--medicaid">Medicaid</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">Aetna Better Health of Louisiana</h3>
+            <p class="insurance-card__plans">Healthy Louisiana Medicaid MCO</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--medicaid">Medicaid MCO</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">AmeriHealth Caritas Louisiana</h3>
+            <p class="insurance-card__plans">Healthy Louisiana Medicaid MCO</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--medicaid">Medicaid MCO</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">Healthy Blue Louisiana</h3>
+            <p class="insurance-card__plans">Healthy Louisiana Medicaid MCO</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--medicaid">Medicaid MCO</li>
+            </ul>
+          </li>
+          <li class="insurance-card">
+            <div class="insurance-card__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h3 class="insurance-card__name">Humana Healthy Horizons in Louisiana</h3>
+            <p class="insurance-card__plans">Healthy Louisiana Medicaid MCO</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--medicaid">Medicaid MCO</li>
+            </ul>
           </li>
           <li class="insurance-card">
             <div class="insurance-card__check" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
             <h3 class="insurance-card__name">VA CCN</h3>
-            <p class="insurance-card__plans">VA Community Care Network</p>
+            <p class="insurance-card__plans">VA Community Care Network for eligible veterans</p>
+            <ul class="insurance-card__chips" role="list">
+              <li class="insurance-chip insurance-chip--va">VA</li>
+            </ul>
           </li>
         </ul>
 
-        <div class="insurance-pending">
-          <p class="eyebrow insurance-pending__eyebrow">Credentialing In Progress</p>
-          <h3 class="insurance-pending__title">Coming soon</h3>
-          <p class="muted">The following plans are actively being credentialed and will be accepted once approvals are complete:</p>
-          <ul class="insurance-pending__list" role="list">
-            <li>Humana &mdash; Commercial, Medicare, Medicaid</li>
-            <li>Cigna &mdash; Commercial</li>
-          </ul>
-          <p class="muted" style="font-size:var(--text-sm); margin-top:var(--space-3);">If your plan isn't listed above, reach out &mdash; the credentialing list is growing, and out-of-network options like superbills are available in the meantime.</p>
-        </div>
+        <p class="muted insurance-footnote">Coverage varies by employer and plan. Benefits, copays, deductibles, and telehealth eligibility are always verified before your first session. If your plan isn't listed above, reach out &mdash; the credentialing list keeps growing, and out-of-network options like superbills are available in the meantime.</p>
       </div>
     </div>
   </section>
@@ -258,7 +334,7 @@
         </div>
         <div class="info-list__row">
           <span class="info-list__label">Accepted Plans</span>
-          <span class="info-list__value">Currently in-network with <strong>Louisiana Medicaid</strong>, <strong>Medicare Part B</strong>, <strong>Blue Cross Blue Shield of Louisiana</strong>, <strong>Louisiana Healthy Blue</strong>, <strong>Aetna</strong> (Commercial, Medicare, Medicaid), <strong>UnitedHealthcare</strong> (Commercial and Medicare), <strong>AmeriHealth Caritas</strong>, and <strong>VA CCN</strong>. <strong>Humana</strong> (Commercial, Medicare, Medicaid) and <strong>Cigna</strong> (Commercial) are currently being credentialed. Reach out for the most current status.</span>
+          <span class="info-list__value">Currently in-network with <strong>Blue Cross Blue Shield</strong> (Commercial), <strong>Aetna</strong> (Commercial, Medicare), <strong>UnitedHealthcare</strong> (Commercial, Medicare), <strong>Humana</strong> (Commercial, Medicare), <strong>Cigna</strong> (Commercial), <strong>UMR</strong> (Commercial), <strong>Medicare Part B</strong>, <strong>Louisiana Medicaid</strong>, four Louisiana Medicaid managed care organizations &mdash; <strong>Aetna Better Health of Louisiana</strong>, <strong>AmeriHealth Caritas Louisiana</strong>, <strong>Healthy Blue Louisiana</strong>, and <strong>Humana Healthy Horizons in Louisiana</strong> &mdash; and <strong>VA CCN</strong>. Reach out for the most current status.</span>
         </div>
         <div class="info-list__row">
           <span class="info-list__label">Insurance Questions</span>
