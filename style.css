@@ -998,7 +998,8 @@ a.underline-link:hover {
   margin-right: 6px;
   flex-shrink: 0;
 }
-.insurance-chips li > :first-child:not(.insurance-tag) { flex: 1; }
+.insurance-chips li > :first-child:not(.insurance-tag) { flex: 1; min-width: 0; }
+.insurance-chips li .insurance-tag + .insurance-tag { margin-left: 6px; }
 .insurance-tag {
   font-size: 0.6rem;
   font-weight: 700;
@@ -1010,6 +1011,14 @@ a.underline-link:hover {
   color: var(--color-text-muted);
   white-space: nowrap;
   margin-left: auto;
+  align-self: center;
+  flex-shrink: 0;
+}
+.insurance-chips li .insurance-tag ~ .insurance-tag { margin-left: 6px; }
+.insurance-tag--pending {
+  background: #fff3e0;
+  color: #8a4b00;
+  cursor: help;
 }
 
 .insurance-footnote {
