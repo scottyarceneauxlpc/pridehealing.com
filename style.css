@@ -1016,8 +1016,8 @@ a.underline-link:hover {
 }
 .insurance-chips li .insurance-tag ~ .insurance-tag { margin-left: 6px; }
 .insurance-tag--pending {
-  background: #fff3e0;
-  color: #8a4b00;
+  background: #eaf2ff;
+  color: #1e4a8a;
   cursor: help;
 }
 
