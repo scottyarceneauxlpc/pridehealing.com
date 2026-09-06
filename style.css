@@ -2159,9 +2159,3 @@ a.underline-link:hover {
   color: var(--color-text, inherit);
 }
 
-/* Contact Us button under the after-hours notice */
-.footer__afterhours-cta {
-  text-align: center;
-  margin: 0 auto var(--space-3);
-  max-width: 72ch;
-}
