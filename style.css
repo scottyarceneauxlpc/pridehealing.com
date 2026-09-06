@@ -2087,24 +2087,32 @@ a.underline-link:hover {
   border: 0;
 }
 
-/* Cancellation tagline in footer */
-.footer__bottom--cancellation {
+/* Merged practice-info box in footer (cancellation + after-hours) */
+.footer__bottom--practice-info {
   padding-top: var(--space-4);
   padding-bottom: 0;
 }
-.footer__cancellation {
-  font-size: var(--text-sm);
-  line-height: 1.6;
-  color: var(--color-text-muted, #6b6b6b);
+.footer__practice-info {
   max-width: 72ch;
   margin: 0 auto var(--space-4);
-  text-align: center;
   padding: var(--space-4);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-.footer__cancellation strong {
+.footer__practice-info-item {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text-muted, #6b6b6b);
+  text-align: center;
+  margin: 0;
+}
+.footer__practice-info-item + .footer__practice-info-item {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer__practice-info-item strong {
   color: var(--color-text, inherit);
 }
 
@@ -2138,24 +2146,4 @@ a.underline-link:hover {
   }
 }
 
-/* After-hours voicemail notice in footer */
-.footer__bottom--afterhours {
-  padding-top: var(--space-2);
-  padding-bottom: 0;
-}
-.footer__afterhours {
-  font-size: var(--text-sm);
-  line-height: 1.6;
-  text-align: center;
-  max-width: 72ch;
-  margin: 0 auto var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  color: var(--color-text-muted, #6b6b6b);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.footer__afterhours strong {
-  color: var(--color-text, inherit);
-}
 
