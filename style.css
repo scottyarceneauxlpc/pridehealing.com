@@ -1560,6 +1560,20 @@ a.underline-link:hover {
 .footer__col a:hover {
   color: var(--color-primary);
 }
+.footer__col li .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
+.footer__col li .btn:hover {
+  color: var(--color-primary);
+}
+.footer__col li .btn--primary:hover {
+  color: #fff;
+}
 .footer__bottom {
   border-top: 1px solid var(--color-divider);
   padding-block: var(--space-6);
