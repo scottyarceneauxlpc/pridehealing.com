@@ -1462,6 +1462,56 @@ a.underline-link:hover {
   color: var(--color-error);
 }
 
+/* ---------- Policy tiles ---------- */
+.policy-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+@media (max-width: 640px) {
+  .policy-tiles { grid-template-columns: 1fr; }
+}
+.policy-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-6);
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  min-height: 168px;
+}
+.policy-tile:hover,
+.policy-tile:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+  background: var(--color-primary-hover, var(--color-primary));
+  color: #ffffff;
+  text-decoration: none;
+}
+.policy-tile__title {
+  font-size: var(--text-xl, 1.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+}
+.policy-tile__desc {
+  font-size: var(--text-sm, 0.9375rem);
+  line-height: 1.5;
+  color: rgba(255,255,255,0.92);
+  flex: 1;
+}
+.policy-tile__cta {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm, 0.9375rem);
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
 /* ---------- Form ---------- */
 .form {
   display: flex;
